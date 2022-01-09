@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jacins app';
-  name = "my customized name";º
 }
