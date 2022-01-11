@@ -1,0 +1,4 @@
+<label>User Name</label>
+<input type="text" [(ngModel)]="username">
+<p>{{username}}</p>
+<button class="btn btn-primary" (click)="onCleanUsername()" [disabled]="!username">Reset text</button>
