@@ -9,10 +9,11 @@ import {WarningAlertComponent} from './warning-alert/warning-alert.component';
 import {SuccessAlertComponent} from './success-alert/success-alert.component';
 import {FormsModule} from "@angular/forms";
 import { BindingComponent } from './binding/binding.component';
+import { DisplayDetailsComponent } from './display-details/display-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ServerComponent, ServersComponent, ListComponent, WarningAlertComponent, SuccessAlertComponent, BindingComponent
+    AppComponent, ServerComponent, ServersComponent, ListComponent, WarningAlertComponent, SuccessAlertComponent, BindingComponent, DisplayDetailsComponent
   ],
   imports: [
     BrowserModule, FormsModule

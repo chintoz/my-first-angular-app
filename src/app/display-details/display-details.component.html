@@ -1,0 +1,15 @@
+<h3>Section 2. Task 3. Practicing directives</h3>
+<button class="btn btn-primary" (click)="onChangeDisplay()">Display Details</button>
+<br>
+<p *ngIf="this.display; else noContent" >Secret Password = tuna</p>
+<ng-template #noContent>
+  <p>****************</p>
+</ng-template>
+
+<br>
+<p class="lead">Log entries</p>
+<ul *ngIf="log.length > 0">
+  <li *ngFor="let entry of log;index as i" [ngStyle]="getStyleByPosition(i)" [ngClass]="getClassByPosition(i)">{{entry}}</li>
+</ul>
+
+
