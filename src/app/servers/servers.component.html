@@ -19,6 +19,6 @@
 <hr/>
 <p [innerText]="allowNewServer"></p>
 <p>{{serverCreationStatus}}</p>
-<div app-server></div>
-<div app-server></div>
+
+<div app-server *ngFor="let server of servers"></div>
 
